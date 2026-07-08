@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agent Management</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>MegaNet</h2>
+
+<p>Voucher Management</p>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="../index.html">
+
+<span>📊</span>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vouchers.html">
+
+<span>🎫</span>
+
+Voucher Management
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="agents.html">
+
+<span>👥</span>
+
+Agents
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<span>📈</span>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="sync.html">
+
+<span>☁</span>
+
+Huawei Sync
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<span>⚙</span>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div>
+
+<h1>Agent Management</h1>
+
+<p>Manage Voucher Agents</p>
+
+</div>
+
+</header>
+
+<section class="panel">
+
+<div style="display:flex;justify-content:space-between;margin-bottom:20px;flex-wrap:wrap;gap:10px;">
+
+<button id="addAgent">
+
+Add Agent
+
+</button>
+
+<input
+
+type="text"
+
+id="searchAgent"
+
+placeholder="Search Agent..."
+
+style="padding:12px;width:250px;border:1px solid #ddd;border-radius:10px;">
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Phone</th>
+
+<th>Allocated</th>
+
+<th>Activated</th>
+
+<th>Remaining</th>
+
+<th>Revenue</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="agentTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="../js/utils.js"></script>
+
+<script src="../js/agents.js"></script>
+
+</body>
+
+  </html>
