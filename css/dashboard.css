@@ -1,0 +1,188 @@
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.stats .card{
+    position:relative;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.stats .card:hover{
+    transform:translateY(-4px);
+}
+
+.stats .card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+    background:var(--primary);
+}
+
+.stats .card:nth-child(2)::before{
+    background:var(--success);
+}
+
+.stats .card:nth-child(3)::before{
+    background:var(--warning);
+}
+
+.stats .card:nth-child(4)::before{
+    background:#6C63FF;
+}
+
+.panel{
+    display:flex;
+    flex-direction:column;
+}
+
+.panel table{
+    width:100%;
+}
+
+.panel table th{
+    background:#F8FAFC;
+    color:#444;
+    font-weight:600;
+}
+
+.panel table td{
+    color:#555;
+}
+
+.panel table tr:last-child td,
+.panel table tr:last-child th{
+    font-weight:700;
+}
+
+.panel table tbody tr:hover{
+    background:#EEF5FF;
+}
+
+.status{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status.online{
+    background:#E8F5E9;
+    color:#2E7D32;
+}
+
+.status.warning{
+    background:#FFF8E1;
+    color:#F9A825;
+}
+
+.status.offline{
+    background:#FDECEC;
+    color:#C62828;
+}
+
+.package-name{
+    font-weight:500;
+}
+
+.activation-total{
+    font-size:18px;
+    color:var(--primary);
+    font-weight:700;
+}
+
+.recent-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid var(--border);
+}
+
+.recent-item:last-child{
+    border-bottom:none;
+}
+
+.recent-left h4{
+    font-size:15px;
+    margin-bottom:4px;
+}
+
+.recent-left p{
+    color:#777;
+    font-size:13px;
+}
+
+.recent-time{
+    color:#999;
+    font-size:12px;
+}
+
+.progress{
+    width:100%;
+    height:8px;
+    background:#E5E7EB;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress .bar{
+    height:100%;
+    width:0%;
+    background:var(--primary);
+    border-radius:30px;
+    transition:width .5s ease;
+}
+
+.sync-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    padding:16px;
+    border-radius:12px;
+    background:#F8FAFC;
+}
+
+.sync-card h4{
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.sync-card p{
+    font-size:13px;
+    color:#777;
+}
+
+.sync-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#2E7D32;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+    transform:scale(1);
+    opacity:1;
+}
+
+50%{
+    transform:scale(1.4);
+    opacity:.5;
+}
+
+100%{
+    transform:scale(1);
+    opacity:1;
+}
+
+}
