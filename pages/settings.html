@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>MegaNet</h2>
+
+<p>Voucher Management</p>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="../index.html">
+
+<span>📊</span>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vouchers.html">
+
+<span>🎫</span>
+
+Voucher Management
+
+</a>
+
+</li>
+
+<li>
+
+<a href="agents.html">
+
+<span>👥</span>
+
+Agents
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<span>📈</span>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="sync.html">
+
+<span>☁</span>
+
+Huawei Sync
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="settings.html">
+
+<span>⚙</span>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div>
+
+<h1>Settings</h1>
+
+<p>System Configuration</p>
+
+</div>
+
+</header>
+
+<section class="panel">
+
+<h3>Company Information</h3>
+
+<br>
+
+<label>Company Name</label>
+
+<input
+type="text"
+id="companyName"
+placeholder="MegaNet WiFi">
+
+<br><br>
+
+<label>Company Email</label>
+
+<input
+type="email"
+id="companyEmail"
+placeholder="admin@meganet.com">
+
+<br><br>
+
+<label>Phone Number</label>
+
+<input
+type="text"
+id="companyPhone"
+placeholder="+234">
+
+<br><br>
+
+<button id="saveCompany">
+
+Save Company
+
+</button>
+
+</section>
+
+<br>
+
+<section class="panel">
+
+<h3>Huawei Configuration</h3>
+
+<br>
+
+<label>Project ID</label>
+
+<input
+type="text"
+id="projectId">
+
+<br><br>
+
+<label>Tenant ID</label>
+
+<input
+type="text"
+id="tenantId">
+
+<br><br>
+
+<label>CSRF Token</label>
+
+<input
+type="text"
+id="csrfToken">
+
+<br><br>
+
+<button id="saveHuawei">
+
+Save Huawei
+
+</button>
+
+</section>
+
+<br>
+
+<section class="panel">
+
+<h3>Firebase</h3>
+
+<br>
+
+<label>API Key</label>
+
+<input
+type="text"
+id="apiKey">
+
+<br><br>
+
+<label>Project ID</label>
+
+<input
+type="text"
+id="firebaseProject">
+
+<br><br>
+
+<button id="saveFirebase">
+
+Save Firebase
+
+</button>
+
+</section>
+
+</div>
+
+<script src="../js/settings.js"></script>
+
+</body>
+
+  </html>
