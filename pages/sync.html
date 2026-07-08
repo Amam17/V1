@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Huawei Sync</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>MegaNet</h2>
+
+<p>Voucher Management</p>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="../index.html">
+
+<span>📊</span>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vouchers.html">
+
+<span>🎫</span>
+
+Voucher Management
+
+</a>
+
+</li>
+
+<li>
+
+<a href="agents.html">
+
+<span>👥</span>
+
+Agents
+
+</a>
+
+</li>
+
+<li>
+
+<a href="reports.html">
+
+<span>📈</span>
+
+Reports
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="sync.html">
+
+<span>☁</span>
+
+Huawei Sync
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<span>⚙</span>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div>
+
+<h1>Huawei Synchronization</h1>
+
+<p>Monitor Huawei UniPortal Connection</p>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<div class="card">
+
+<p>Connection Status</p>
+
+<h2 id="syncStatus">Connected</h2>
+
+</div>
+
+<div class="card">
+
+<p>Last Sync</p>
+
+<h2 id="lastSync">--</h2>
+
+</div>
+
+<div class="card">
+
+<p>Total Synced</p>
+
+<h2 id="totalSynced">0</h2>
+
+</div>
+
+<div class="card">
+
+<p>Activated Today</p>
+
+<h2 id="todaySync">0</h2>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h3>Huawei Sync Log</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Time</th>
+
+<th>Status</th>
+
+<th>Message</th>
+
+</tr>
+
+</thead>
+
+<tbody id="syncLog">
+
+<tr>
+
+<td colspan="4">
+
+No Synchronization Yet
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<br>
+
+<button id="syncNow">
+
+Synchronize Now
+
+</button>
+
+</section>
+
+</div>
+
+<script src="../js/utils.js"></script>
+
+<script src="../js/sync.js"></script>
+
+</body>
+
+</html>
