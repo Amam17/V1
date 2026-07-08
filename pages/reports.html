@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reports</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<h2>MegaNet</h2>
+
+<p>Voucher Management</p>
+
+</div>
+
+<ul class="menu">
+
+<li>
+
+<a href="../index.html">
+
+<span>📊</span>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="vouchers.html">
+
+<span>🎫</span>
+
+Voucher Management
+
+</a>
+
+</li>
+
+<li>
+
+<a href="agents.html">
+
+<span>👥</span>
+
+Agents
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="reports.html">
+
+<span>📈</span>
+
+Reports
+
+</a>
+
+</li>
+
+<li>
+
+<a href="sync.html">
+
+<span>☁</span>
+
+Huawei Sync
+
+</a>
+
+</li>
+
+<li>
+
+<a href="settings.html">
+
+<span>⚙</span>
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div>
+
+<h1>Reports</h1>
+
+<p>Sales & Activation Reports</p>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<div class="card">
+
+<p>Total Revenue</p>
+
+<h2 id="totalRevenue">₦0</h2>
+
+</div>
+
+<div class="card">
+
+<p>Total Activated</p>
+
+<h2 id="totalActivated">0</h2>
+
+</div>
+
+<div class="card">
+
+<p>Total Available</p>
+
+<h2 id="totalAvailable">0</h2>
+
+</div>
+
+<div class="card">
+
+<p>Total Agents</p>
+
+<h2 id="totalAgents">0</h2>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<h3>Package Sales Report</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Package</th>
+
+<th>Activated</th>
+
+<th>Revenue</th>
+
+</tr>
+
+</thead>
+
+<tbody id="packageReport">
+
+</tbody>
+
+</table>
+
+</section>
+
+<br>
+
+<section class="panel">
+
+<h3>Agent Sales Report</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Agent</th>
+
+<th>Activated</th>
+
+<th>Revenue</th>
+
+</tr>
+
+</thead>
+
+<tbody id="agentReport">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="../js/utils.js"></script>
+
+<script src="../js/reports.js"></script>
+
+</body>
+
+</html>
